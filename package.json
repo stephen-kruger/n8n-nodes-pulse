@@ -1,7 +1,7 @@
 {
   "name": "n8n-nodes-pulse",
-  "version": "0.1.0",
-  "description": "This is the first stab at writing an agent",
+  "version": "0.1.1",
+  "description": "Pulse Analytics Tool",
   "keywords": [
     "n8n-community-node-package"
   ],
