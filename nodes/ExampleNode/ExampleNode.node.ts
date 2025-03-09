@@ -9,13 +9,13 @@ import { NodeOperationError } from 'n8n-workflow';
 
 export class ExampleNode implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Example Node',
+		displayName: 'Pulse Node',
 		name: 'exampleNode',
 		group: ['transform'],
 		version: 1,
-		description: 'Basic Example Node',
+		description: 'Pulse Node',
 		defaults: {
-			name: 'Example Node',
+			name: 'Pulse Node',
 		},
 		inputs: ['main'],
 		outputs: ['main'],
@@ -23,12 +23,12 @@ export class ExampleNode implements INodeType {
 			// Node properties which the user gets displayed and
 			// can change on the node.
 			{
-				displayName: 'My String',
-				name: 'myString',
+				displayName: 'Properties Display Name',
+				name: 'propertiesName',
 				type: 'string',
 				default: '',
-				placeholder: 'Placeholder value',
-				description: 'The description text',
+				placeholder: 'Properties placeholder value',
+				description: 'Properties description text',
 			},
 		],
 	};
@@ -48,7 +48,7 @@ export class ExampleNode implements INodeType {
 		// (This could be a different value for each item in case it contains an expression)
 		for (let itemIndex = 0; itemIndex < items.length; itemIndex++) {
 			try {
-				myString = this.getNodeParameter('myString', itemIndex, '') as string;
+				myString = this.getNodeParameter('propertiesName', itemIndex, '') as string;
 				item = items[itemIndex];
 
 				item.json.myString = myString;

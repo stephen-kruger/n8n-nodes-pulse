@@ -1,9 +1,9 @@
 {
   "name": "n8n-nodes-pulse",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "description": "Pulse Analytics Tool",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package","n8n-nodes-pulse","pulse-analytics"
   ],
   "license": "MIT",
   "homepage": "",
