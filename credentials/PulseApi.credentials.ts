@@ -5,9 +5,9 @@ import {
 	INodeProperties,
 } from 'n8n-workflow';
 
-export class HttpBinApi implements ICredentialType {
-	name = 'httpbinApi';
-	displayName = 'HttpBin API';
+export class PulseApi implements ICredentialType {
+	name = 'pulseApi';
+	displayName = 'Pulse API';
 	documentationUrl = 'https://www.fractional.ltd/';
 	properties: INodeProperties[] = [
 		{

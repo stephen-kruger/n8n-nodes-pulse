@@ -1,23 +1,23 @@
 import { INodeType, INodeTypeDescription } from 'n8n-workflow';
 import { httpVerbFields, httpVerbOperations } from './HttpVerbDescription';
 
-export class HttpBin implements INodeType {
+export class Transform implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'HttpBin',
-		name: 'httpBin',
+		displayName: 'Pulse',
+		name: 'pulse',
 		icon: 'file:pulse.svg',
-		group: ['transform'],
+		group: ['pulse'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
-		description: 'Interact with HttpBin API',
+		description: 'Interact with Pulse API',
 		defaults: {
-			name: 'HttpBin',
+			name: 'Pulse',
 		},
 		inputs: ['main'],
 		outputs: ['main'],
 		credentials: [
 			{
-				name: 'httpbinApi',
+				name: 'pulseApi',
 				required: false,
 			},
 		],

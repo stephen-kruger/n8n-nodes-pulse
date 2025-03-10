@@ -4,13 +4,13 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 } from 'n8n-workflow';
-// import { NodeConnectionType, NodeOperationError } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import { NodeConnectionType, NodeOperationError } from 'n8n-workflow';
+// import { NodeOperationError } from 'n8n-workflow';
 
-export class ExampleNode implements INodeType {
+export class PulseNode implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Pulse Node',
-		name: 'exampleNode',
+		name: 'pulseNode',
 		group: ['transform'],
 		version: 1,
 		description: 'Pulse Node',

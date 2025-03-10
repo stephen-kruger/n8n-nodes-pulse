@@ -8,6 +8,18 @@ This is a non-production ready n8n node for learning purposes.
 * pnpm rebuild
 * pnpm publish
 
+## Local build
+* pnpm install -g sqlite3 n8n@latest
+* pnpm run build
+* pnpm link
+* cd /Users/stephen.kruger/Library/pnpm && pnpm link n8n-nodes-pulse
+
+## Fix version of Node :
+* brew install node@14
+* brew unlink node
+* brew link node@14
+* node -v
+
 ## Prerequisites
 
 You need the following installed on your development machine:
