@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-pulse",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "description": "Pulse Analytics Tool",
   "keywords": [
     "n8n-community-node-package"

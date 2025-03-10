@@ -23,11 +23,11 @@ export class PulseNode implements INodeType {
 			// Node properties which the user gets displayed and
 			// can change on the node.
 			{
-				displayName: 'Properties Display Name',
-				name: 'propertiesName',
+				displayName: 'My String',
+				name: 'myString',
 				type: 'string',
 				default: '',
-				placeholder: 'Properties placeholder value',
+				placeholder: 'Placeholder value',
 				description: 'Properties description text',
 			},
 		],
@@ -48,7 +48,7 @@ export class PulseNode implements INodeType {
 		// (This could be a different value for each item in case it contains an expression)
 		for (let itemIndex = 0; itemIndex < items.length; itemIndex++) {
 			try {
-				myString = this.getNodeParameter('propertiesName', itemIndex, '') as string;
+				myString = this.getNodeParameter('myString', itemIndex, '') as string;
 				item = items[itemIndex];
 
 				item.json.myString = myString;
